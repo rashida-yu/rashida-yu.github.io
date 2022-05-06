@@ -1,43 +1,93 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+@charset "utf-8";
+
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+body{
+    /*background: rgb(79, 108, 141); */
+    background-image: url('5.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-ul.posts li {
-    list-style: none;
+/*   rgb(217, 145, 43) gold
+rgb(32, 53, 77) 
+#ffffff white*/
+
+.container{
+    background-image: url('2.jpg') contain ;
+    
+  /*  background-color: rgb(193, 206, 221);*/
+    width: 50%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 70%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.timerDisplay{
+    position: relative;
+    width: 94%;
+    background: rgb(32, 53, 77);
+    left: 4%;
+    padding: 40px 0;
+    font-family: 'Papyrus', Geneva, sans-serif;
+    color: rgb(217, 145, 43);
+    font-size: 70px;
+    font-weight: 500;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(217, 145, 43);
+}/*rgba(0,139,253,0.25)*/
+
+.buttons{
+    width: 90%;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons button{
+    width: 140px;
+    height: 70px;
+    background-color: rgb(32, 53, 77) ;
+    
+    color: rgb(217, 145, 43); ;
+    border: none;
+    font-family: 'Papyrus', Geneva, sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 10px rgb(217, 145, 43);
+}
+
+.buttons button:nth-last-child(2){
+    background-color:rgb(32, 53, 77) ;
+    ;
+  }
+  .buttons button:nth-last-child(1){
+    background-color:rgb(32, 53, 77) ;
+    ;
+  }
+
+.buttons button:hover, .buttons button:active {
+    background-color: rgb(217, 145, 43);
+    color: white;
+    
+    box-shadow: 0 0 40px rgb(32, 53, 77);
 }
